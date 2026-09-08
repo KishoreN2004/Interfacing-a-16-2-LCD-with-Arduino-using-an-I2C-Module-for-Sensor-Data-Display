@@ -87,7 +87,12 @@ void setup()
 {
   lcd.init();
   lcd.backlight();
-  lcd.print("Hello");
+
+  lcd.setCursor(3, 0);
+  lcd.print("GAME OVER");
+
+  lcd.setCursor(2, 1);
+  lcd.print("Score: 25");
 }
 
 void loop()
